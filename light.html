@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dark-light</title>
+    <link rel="stylesheet" href="light.css">
+    <script src="https://kit.fontawesome.com/817a8fd6e8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <h2><i class="fa-brands fa-deploydog"></i> DAMMU</h2>
+        <ul><li>HOME</li>
+        <li>ABOUT</li>
+        <li>PORTFOLIO</li>
+        <li>HIRE ME</li>
+        <li>SERVICES</li></ul>
+        <img src="light/moon.png" class="dk">
+    </nav>
+    <div class="main">
+        <h1>I'm <span>Kate</span> Amelia</h1>
+        <p>it is my own website of dark and light <br>theme of basic javascript and html and css</p><br><br>
+        <a href="#">Download CV </a>
+    
+    </div>
+       <div class="img">
+        <img src="light/pattern.png" class="back-img">
+        <img src="light/girl.png" class="main-img">
+       </div>
+       <div class="icons">
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-chrome"></i>
+        <i class="fa-brands fa-facebook"></i>
+       </div>
+</body>
+<script>
+    const dk=document.querySelector('.dk');
+   dk.addEventListener('click',theme)
+   function theme(){
+    document.body.classList.toggle('dark');
+    if( document.body.classList.contains('dark')){
+        dk.src='light/sun.png'
+    }
+    else{
+        dk.src='light/moon.png'
+    }
+   }
+</script>
+</html>
